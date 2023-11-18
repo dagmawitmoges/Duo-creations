@@ -1,0 +1,45 @@
+// local imports
+import { referenceTitle, referenceSubtitle } from "../data";
+
+import imageOne from "../assets/bg6.jpg";
+import imageTwo from "../assets/bg5.jpg";
+import imageThree from "../assets/bg3.jpg";
+
+import FadeIn from "../components/FadeIn";
+
+const Reference = () => {
+  return (
+    <div id="reference" className="mb-[160px] px-10 max-w-[1490px] mx-auto">
+      <FadeIn delay={0.2} direction="down">
+        <h1 className="text-5xl lg:text-[64px] font-medium text-fontBlack mb-6 text-center">
+          {referenceTitle}
+        </h1>
+      </FadeIn>
+      <FadeIn delay={0.4} direction="down">
+        <h5 className="text-[#4F4F4F] text-lg xs:text-xl mb-12 text-center">
+          {referenceSubtitle}
+        </h5>
+      </FadeIn>
+
+      <div className="flex flex-col md:flex-row md:justify-center gap-8">
+        <FadeIn delay={0.2} direction="right">
+          <div className="flex flex-col gap-8">
+          <img
+            src={imageOne}
+            alt=""
+           style={{width:"650px" , height:"502px" , borderRadius: '60px'}}
+          />
+            <img src={imageTwo} alt="" style={{width:"650px", height:"568px" ,borderRadius: '60px'}}/>
+          </div>
+        </FadeIn>
+        <FadeIn delay={0.2} direction="left">
+          <div>
+            <img src={imageThree} alt="" style={{width:"650px",height:"1000px" , borderRadius: '60px'}}/>
+          </div>
+        </FadeIn>
+      </div>
+    </div>
+  );
+};
+
+export default Reference;
