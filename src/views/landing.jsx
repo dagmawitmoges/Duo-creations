@@ -21,7 +21,7 @@ const Landing = () => {
 
   return (
     <div
-      className="h-screen relative flex flex-col items-center "
+      className="h-screen relative flex flex-col items-center"
       style={{
         background: `url(${heroImage})`,
         backgroundPosition: "bottom",
@@ -29,34 +29,30 @@ const Landing = () => {
         backgroundSize: "cover",
       }}
     >
-      
-      <div
-        className="relative w-full max-w-[1390px]  flex justify-between  "
-      >
-        <img src={logo} alt="" 
-        
-        style={{width:100, marginLeft:-50 , marginTop:25, }}
-        
+      <div className="relative w-full max-w-[1390px] flex flex-col items-center justify-center">
+        <img
+          src={logo}
+          alt=""
+          className="w-[80px] md:w-[100px] lg:w-[120px] mt-5 md:mt-[25px] max-w-full h-auto"
         />
-        <div  className="relative w-full  flex 
-        items-center justify-between  mx-auto  "style={{marginLeft:250 , marginTop:25, }} >
-        <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
-          <NavLink to="services">Services</NavLink>
-          <NavLink to="location">Location</NavLink>
-          <NavLink to="reference">Events</NavLink>
-          <NavLink to="reference">Events</NavLink>
+        <div className="relative w-full flex items-center justify-center mt-[25px]">
+          <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
+            <NavLink to="services">Services</NavLink>
+            <NavLink to="location">Location</NavLink>
+            <NavLink to="reference">Events</NavLink>
+            <NavLink to="reference">Events</NavLink>
+            <NavLink to="book">Book</NavLink>
+          </ul>
 
-          <NavLink to="book">Book</NavLink>
-        </ul>
-
-        <img src={contact} className="hidden md:block cursor-pointer" alt="" style={{marginLeft:250 , marginTop:-15 , width:50,}} />
-
-        <HiMenuAlt3
-          size={30}
-          className="block md:hidden cursor-pointer text-white"
-          onClick={() => setShowMobileMenu((prev) => !prev)}
-        />
-</div>
+          <div className="hidden md:flex items-center justify-end">
+            <img src={contact} className="cursor-pointer w-[40px] md:w-[50px]" alt="" />
+          </div>
+          <HiMenuAlt3
+            size={30}
+            className="block md:hidden cursor-pointer text-white"
+            onClick={() => setShowMobileMenu((prev) => !prev)}
+          />
+        </div>
         <div
           className={`block md:hidden w-full fixed ${
             !showMobileMenu ? "-top-[410px]" : "top-0"
@@ -83,7 +79,7 @@ const Landing = () => {
             </NavLink>
           </ul>
 
-          <img src={contact} className="mt-8 mx-auto cursor-pointer" alt="" />
+          <img src={contact} className="mt-8 mx-auto cursor-pointer w-[40px] md:w-[50px]" alt="" />
         </div>
       </div>
 
