@@ -8,23 +8,7 @@ export const heroTitle = "we're dedicated to making every moment special.";
 export const heroSubtitle =
   "At DUO-Creations we don't just plan events; we craft experiences that resonate with you and your audience";
 
-// export const services = [
-//   {
-//     title: "Free Shipping",
-//     subtitle: "No charge for your delivery",
-//     icon: shippingIcon,
-//   },
-//   {
-//     title: "Quick Payment",
-//     subtitle: "100% secure",
-//     icon: paymentIcon,
-//   },
-//   {
-//     title: "24/7 Support",
-//     subtitle: "Don't hesitate to contact us",
-//     icon: supportIcon,
-//   },
-// ];
+
 
 export const productsTitle = "Recent Popular Events";
 export const productsBtnText = "See Colection";
