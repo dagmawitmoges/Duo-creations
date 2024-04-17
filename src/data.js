@@ -54,7 +54,7 @@ export const footerLinksColumnTwo = [
   {
     title: "Address",
     links: [
-      "somewhere, AddisAbaba, Ethiopia",
+      " AddisAbaba, Ethiopia",
       "DuoCreations@gmail.com",
     ],
   },

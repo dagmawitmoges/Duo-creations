@@ -6,7 +6,8 @@ import heroImage from "../assets/bg6.jpg";
 import logo from "../assets/download.png";
 import contact from "../assets/contact.png";
 import searchIcon from "../assets/search-icon.svg";
-
+import Reference from "./Reference";
+import book from './book'
 import { heroTitle, heroSubtitle } from "../data";
 
 import FadeIn from "../components/FadeIn";
@@ -45,10 +46,10 @@ const Landing = () => {
       />
         <div className="relative w-full flex items-center justify-between mx-auto" style={{ marginLeft: "20%", marginTop: "0" }}>
           <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
-            <NavLink to="#services">Services</NavLink>
-            <NavLink to="location">Location</NavLink>
+            <NavLink to="location" >Services</NavLink>
+            <NavLink to="footer">Location</NavLink>
             <NavLink to="reference">Events</NavLink>
-            <NavLink to="reference">Events</NavLink>
+            {/* <NavLink to="reference">Events</NavLink> */}
             <NavLink to="book">Book</NavLink>
           </ul>
 

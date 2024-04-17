@@ -7,7 +7,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-[linear-gradient(133deg,_#000000_0%,_#FFD700_100%)]">
+    <div id="footer" className="bg-[linear-gradient(133deg,_#000000_0%,_#FFD700_100%)]">
       <div className="max-w-[1490px] mx-auto px-10 py-[120px]">
         <div className="flex flex-col items-center xl:items-start xl:flex-row xl:justify-between gap-12">
           <div className="w-full xl:w-auto flex flex-col items-center xl:items-start">

@@ -10,7 +10,7 @@ import FadeIn from "../components/FadeIn";
 const Location = () => {
   return (
     <div
-      id="products"
+      id="location"
       className="flex flex-col 2xl:flex-row gap-[128px] 2xl:gap-2 2xl:justify-between mt-[160px] 2xl:mt-[270px] mb-[160px] max-w-[1490px]
         mx-auto px-10 w-full"
     >

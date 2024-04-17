@@ -198,7 +198,7 @@ const Care = () => {
   return (
         
 
-<div style={{ textAlign: 'center', padding: '20px', background: '#f4f4f4' }}>
+<div  id='book' style={{ textAlign: 'center', padding: '20px', background: '#f4f4f4' }}>
       <h1 style={{ fontSize: '24px', color: '#333', marginBottom: '20px' }}>Event Booking</h1>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <form action="http://localhost:8000/submit-booking" method="post" onSubmit={handleSubmit} style={{ marginRight: '20px', maxWidth: '600px', width: '100%', background: 'white', padding: '30px', borderRadius: '8px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
