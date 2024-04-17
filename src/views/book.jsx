@@ -150,7 +150,7 @@
 
 
 import React, { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import imageFour from "../assets/bg5.jpg";
 import FadeIn from "../components/FadeIn";
 const Care = () => {

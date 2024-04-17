@@ -29,38 +29,52 @@ const Landing = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="relative w-full max-w-[1390px] flex flex-col items-center justify-center">
-        <img
-          src={logo}
-          alt=""
-          className="w-[80px] md:w-[100px] lg:w-[120px] mt-5 md:mt-[25px] max-w-full h-auto"
-        />
-        <div className="relative w-full flex items-center justify-center mt-[25px]">
+      <div className="relative w-full max-w-[1390px] flex justify-between items-center mt-5 md:mt-[25px]">
+      <img
+        style={{
+          "@media (max-width: 767px)": {
+            position: "static", // Remove absolute positioning
+            marginTop: "10px", // Add top margin
+          },
+        }}
+        src={logo}
+        alt=""
+        className={`w-[80px] md:w-[100px] lg:w-[120px] ml-[-20px] md:ml-[-50px] max-w-full h-auto ${
+          showMobileMenu ? "w-[60px] md:w-[70px] lg:w-[80px] ml-0" : ""
+        }`}
+      />
+        <div className="relative w-full flex items-center justify-between mx-auto" style={{ marginLeft: "20%", marginTop: "0" }}>
           <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
-            <NavLink to="services">Services</NavLink>
+            <NavLink to="#services">Services</NavLink>
             <NavLink to="location">Location</NavLink>
             <NavLink to="reference">Events</NavLink>
             <NavLink to="reference">Events</NavLink>
             <NavLink to="book">Book</NavLink>
           </ul>
 
-          <div className="hidden md:flex items-center justify-end">
-            <img src={contact} className="cursor-pointer w-[40px] md:w-[50px]" alt="" />
+          <div className="hidden md:flex items-center justify-end" >
+            <img src={contact} className="cursor-pointer w-[40px] md:w-[50px]"  alt="" />
           </div>
           <HiMenuAlt3
             size={30}
-            className="block md:hidden cursor-pointer text-white"
+            className="block md:hidden cursor-pointer text-white HiMenuAlt3"
+            style={{
+              position: "absolute",
+              top: "50%",
+              right: "15px",
+              transform: "translateY(-50%)",
+            }}
             onClick={() => setShowMobileMenu((prev) => !prev)}
           />
         </div>
         <div
           className={`block md:hidden w-full fixed ${
             !showMobileMenu ? "-top-[410px]" : "top-0"
-          } left-0 bg-[#dde0e5] h-[410px] transition-all duration-[800ms] shadow-xl z-10 py-8 px-12 rounded-b-xl`}
+          } left-10 bg-[#dde0e5] h-[410px] transition-all duration-[800ms] shadow-xl z-10 py-8 px-12 rounded-b-xl`}
         >
           <AiOutlineClose
             size={25}
-            className="absolute top-5 right-5 cursor-pointer"
+            className="absolute top-5 right-20 cursor-pointer"
             onClick={() => setShowMobileMenu(false)}
           />
 
